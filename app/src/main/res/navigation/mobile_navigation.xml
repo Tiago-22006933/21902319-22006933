@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.example.fogospt.ui.home.HomeFragment"
+        android:name="com.example.fogospt.ui.dashboard.DashboardFragment"
         android:label="@string/menu_dashboard"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.example.fogospt.ui.gallery.GalleryFragment"
+        android:name="com.example.fogospt.ui.fires.FiresFragment"
         android:label="@string/menu_fires"
         tools:layout="@layout/fragment_fires" />
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="com.example.fogospt.ui.slideshow.SlideshowFragment"
+        android:name="com.example.fogospt.ui.new_fire.NewfireFragment"
         android:label="@string/menu_new_fire"
         tools:layout="@layout/fragment_new_fire" />
 </navigation>

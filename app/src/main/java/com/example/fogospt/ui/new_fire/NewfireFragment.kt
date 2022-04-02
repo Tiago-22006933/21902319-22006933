@@ -1,4 +1,4 @@
-package com.example.fogospt.ui.slideshow
+package com.example.fogospt.ui.new_fire
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.fogospt.databinding.FragmentSlideshowBinding
 
-class SlideshowFragment : Fragment() {
+class NewfireFragment : Fragment() {
 
     private var _binding: FragmentSlideshowBinding? = null
 
@@ -23,7 +23,7 @@ class SlideshowFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val slideshowViewModel =
-            ViewModelProvider(this).get(SlideshowViewModel::class.java)
+            ViewModelProvider(this).get(NewfireViewModel::class.java)
 
         _binding = FragmentSlideshowBinding.inflate(inflater, container, false)
         val root: View = binding.root
