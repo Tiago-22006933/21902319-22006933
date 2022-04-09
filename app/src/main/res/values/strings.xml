@@ -10,4 +10,20 @@
     <string name="menu_dashboard">Dashboard</string>
     <string name="menu_fires">Incêndios</string>
     <string name="menu_new_fire">Registo de incêndio</string>
+
+    <string name="Dashboard_card1_text">Risco nacional</string>
+    <string name="Dashboard_card2_text">Total de bombeiros</string>
+    <string name="Dashboard_card3_text">Total de meios terrestres</string>
+    <string name="Dashboard_card4_text">Total de incêndios</string>
+    <string name="Dashboard_card5_text">Total de meios aéreos</string>
+    <string name="Dashboard_card6_text">Risco de zona</string>
+
+    <string name="person_name">Nome</string>
+    <string name="person_cc">Cartão de cidadão</string>
+    <string name="district">Distrito</string>
+    <string name="datetime">Data e hora</string>
+    <string name="photograph">Fotografia</string>
+    <string name="clearform">Limpar</string>
+    <string name="submitform">Submeter</string>
+
 </resources>
