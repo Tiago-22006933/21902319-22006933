@@ -25,5 +25,7 @@
     <string name="photograph">Fotografia</string>
     <string name="clearform">Limpar</string>
     <string name="submitform">Submeter</string>
+    <string name="new_fire_date_label">Data</string>
+
 
 </resources>
