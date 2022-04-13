@@ -7,7 +7,7 @@
     tools:context=".ui.new_fire.NewfireFragment">
 
     <LinearLayout
-        android:weightSum="6"
+        android:weightSum="7"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -33,13 +33,26 @@
             android:layout_height="fill_parent"
             android:hint="@string/district"
             android:inputType="text" />
-        <EditText
+        <TextView
             android:layout_weight="1"
-            android:id="@+id/new_fire_datetime"
+            android:id="@+id/new_fire_date_label"
             android:layout_width="match_parent"
             android:layout_height="fill_parent"
-            android:hint="@string/datetime"
-            android:inputType="text" />
+            android:text="@string/new_fire_date_label"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            />
+        <DatePicker
+            android:layout_weight="1"
+            android:id="@+id/dpDate"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"
+            />
         <EditText
             android:layout_weight="1"
             android:id="@+id/new_fire_photo"
