@@ -4,9 +4,12 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.example.fogospt.R
 import com.example.fogospt.databinding.FragmentFiresBinding
 
 class FiresFragment : Fragment() {
@@ -32,11 +35,19 @@ class FiresFragment : Fragment() {
         galleryViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
+
+        /*val mapaButton = findViewById<Button>(R.id.mapa)
+
+        mapaButton.setOnClickListener {
+            Toast.makeText(this,"Sucesso", Toast.LENGTH_SHORT).show()
+        }*/
+
         return root
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+
     }
 }
