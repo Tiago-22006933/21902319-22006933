@@ -36,11 +36,7 @@ class FiresFragment : Fragment() {
             textView.text = it
         }
 
-        /*val mapaButton = findViewById<Button>(R.id.mapa)
-
-        mapaButton.setOnClickListener {
-            Toast.makeText(this,"Sucesso", Toast.LENGTH_SHORT).show()
-        }*/
+       _binding!!.mapa.setOnClickListener{ onClickSymbol() }
 
         return root
     }
@@ -48,6 +44,9 @@ class FiresFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
 
+    private fun onClickSymbol() {
+    _binding!!.textGallery.text = "Sucesso"
     }
 }

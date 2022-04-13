@@ -22,7 +22,6 @@
                 android:background="#FF8922">
 
                 <Button
-                    android:id="@+id/mapa"
                     android:background="#0000"
                     android:textColor="@color/white"
                     android:layout_width="0dp"
@@ -30,6 +29,7 @@
                     android:layout_height="50dp"
                     android:text="Lista"></Button>
                 <Button
+                    android:id="@+id/mapa"
                     android:background="#0000"
                     android:textColor="@color/white"
                     android:layout_width="0dp"
@@ -52,6 +52,7 @@
             android:orientation="vertical">
 
         <TextView
+            android:id="@+id/text_gallery"
             android:text="item1"
             android:gravity="center"
             android:textColor="@color/black"
@@ -142,13 +143,13 @@
             android:layout_height="200dp"/>
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:background="#60EFEA"
-                android:gravity="center"
-                android:text="item11"
-                android:textColor="@color/black"
-                android:textSize="10pt" />
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#60EFEA"
+            android:gravity="center"
+            android:text="item11"
+            android:textColor="@color/black"
+            android:textSize="10pt" />
 
             <TextView
             android:text="item12"
@@ -187,7 +188,6 @@
             android:layout_height="200dp"/>
 
         <TextView
-            android:id="@+id/text_gallery"
             android:text="item16"
             android:gravity="center"
             android:textColor="@color/white"
