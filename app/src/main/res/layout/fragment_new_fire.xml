@@ -63,19 +63,11 @@
 
         <LinearLayout
             android:layout_weight="1"
-            android:weightSum="2"
+            android:weightSum="1"
             android:layout_width="match_parent"
             android:layout_height="fill_parent"
             android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/button_clear_form"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="5dp"
-                android:text="@string/clearform" />
             <Button
                 android:id="@+id/button_submit_form"
                 android:layout_width="wrap_content"
