@@ -15,7 +15,6 @@ import com.example.fogospt.R
 import com.example.fogospt.databinding.FragmentNewFireBinding
 import com.example.fogospt.ui.model.FireModel
 import com.example.fogospt.ui.model.FiresModel.listOfFires
-import java.text.SimpleDateFormat
 import java.util.*
 
 class NewfireFragment : Fragment() {

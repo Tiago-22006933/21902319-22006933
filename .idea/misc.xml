@@ -3,18 +3,39 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Rafael/StudioProjects/fogos.pt/app/src/main/res/drawable/ic_menu_fires.xml" value="0.387" />
-        <entry key="..\:/Users/Rafael/StudioProjects/fogos.pt/app/src/main/res/drawable/ic_menu_new_fire.xml" value="0.387" />
-        <entry key="..\:/Users/Rafael/StudioProjects/fogos.pt/app/src/main/res/drawable/side_nav_bar.xml" value="0.387" />
-        <entry key="..\:/Users/Rafael/StudioProjects/fogos.pt/app/src/main/res/layout/activity_main.xml" value="0.38697916666666665" />
-        <entry key="..\:/Users/Rafael/StudioProjects/fogos.pt/app/src/main/res/layout/fragment_fires.xml" value="0.2" />
-        <entry key="..\:/Users/Rafael/StudioProjects/fogos.pt/app/src/main/res/layout/fragment_new_fire.xml" value="0.3052536231884058" />
-        <entry key="..\:/Users/Rafael/StudioProjects/fogos.pt/app/src/main/res/menu/activity_main_drawer.xml" value="0.38697916666666665" />
-        <entry key="..\:/Users/Rafael/StudioProjects/fogos.pt/app/src/main/res/menu/main.xml" value="0.38697916666666665" />
         <entry key="..\:/Lusofona/CM/fogos.pt/app/src/main/res/layout/fragment_dashboard.xml" value="0.2767210144927536" />
         <entry key="..\:/Lusofona/CM/fogos.pt/app/src/main/res/layout/fragment_date_picker.xml" value="0.3171875" />
         <entry key="..\:/Lusofona/CM/fogos.pt/app/src/main/res/layout/fragment_fires.xml" value="0.27203647416413373" />
         <entry key="..\:/Lusofona/CM/fogos.pt/app/src/main/res/layout/fragment_new_fire.xml" value="0.43802083333333336" />
+        <entry key="..\:/Users/Rafael/StudioProjects/fogos.pt/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2495" />
+        <entry key="..\:/Users/Rafael/StudioProjects/fogos.pt/app/src/main/res/drawable/cercle_background.xml" value="0.2225" />
+        <entry key="..\:/Users/Rafael/StudioProjects/fogos.pt/app/src/main/res/drawable/circle_elevado.xml" value="0.216" />
+        <entry key="..\:/Users/Rafael/StudioProjects/fogos.pt/app/src/main/res/drawable/circle_maximo.xml" value="0.172" />
+        <entry key="..\:/Users/Rafael/StudioProjects/fogos.pt/app/src/main/res/drawable/circle_moderado.xml" value="0.216" />
+        <entry key="..\:/Users/Rafael/StudioProjects/fogos.pt/app/src/main/res/drawable/circle_muito_elevado.xml" value="0.216" />
+        <entry key="..\:/Users/Rafael/StudioProjects/fogos.pt/app/src/main/res/drawable/circle_reduzido.xml" value="0.3215" />
+        <entry key="..\:/Users/Rafael/StudioProjects/fogos.pt/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2495" />
+        <entry key="..\:/Users/Rafael/StudioProjects/fogos.pt/app/src/main/res/drawable/ic_launcher_foreground1.xml" value="0.284" />
+        <entry key="..\:/Users/Rafael/StudioProjects/fogos.pt/app/src/main/res/drawable/ic_menu_dashboard.xml" value="0.2495" />
+        <entry key="..\:/Users/Rafael/StudioProjects/fogos.pt/app/src/main/res/drawable/ic_menu_fires.xml" value="0.387" />
+        <entry key="..\:/Users/Rafael/StudioProjects/fogos.pt/app/src/main/res/drawable/ic_menu_new_fire.xml" value="0.387" />
+        <entry key="..\:/Users/Rafael/StudioProjects/fogos.pt/app/src/main/res/drawable/side_nav_bar.xml" value="0.387" />
+        <entry key="..\:/Users/Rafael/StudioProjects/fogos.pt/app/src/main/res/layout-land/fragment_fires.xml" value="0.32760141093474426" />
+        <entry key="..\:/Users/Rafael/StudioProjects/fogos.pt/app/src/main/res/layout-land/item_fire.xml" value="0.28020833333333334" />
+        <entry key="..\:/Users/Rafael/StudioProjects/fogos.pt/app/src/main/res/layout/activity_main.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/Rafael/StudioProjects/fogos.pt/app/src/main/res/layout/app_bar_main.xml" value="0.25" />
+        <entry key="..\:/Users/Rafael/StudioProjects/fogos.pt/app/src/main/res/layout/child_item.xml" value="0.24375" />
+        <entry key="..\:/Users/Rafael/StudioProjects/fogos.pt/app/src/main/res/layout/content_main.xml" value="0.23731884057971014" />
+        <entry key="..\:/Users/Rafael/StudioProjects/fogos.pt/app/src/main/res/layout/fragment_dashboard.xml" value="0.2246376811594203" />
+        <entry key="..\:/Users/Rafael/StudioProjects/fogos.pt/app/src/main/res/layout/fragment_fires.xml" value="0.1" />
+        <entry key="..\:/Users/Rafael/StudioProjects/fogos.pt/app/src/main/res/layout/fragment_new_fire.xml" value="0.3052536231884058" />
+        <entry key="..\:/Users/Rafael/StudioProjects/fogos.pt/app/src/main/res/layout/item_fire.xml" value="0.264" />
+        <entry key="..\:/Users/Rafael/StudioProjects/fogos.pt/app/src/main/res/layout/list_item.xml" value="0.24375" />
+        <entry key="..\:/Users/Rafael/StudioProjects/fogos.pt/app/src/main/res/layout/nav_header_main.xml" value="0.24375" />
+        <entry key="..\:/Users/Rafael/StudioProjects/fogos.pt/app/src/main/res/layout/popup_detail.xml" value="0.291213768115942" />
+        <entry key="..\:/Users/Rafael/StudioProjects/fogos.pt/app/src/main/res/layout/recycle_layout.xml" value="0.1" />
+        <entry key="..\:/Users/Rafael/StudioProjects/fogos.pt/app/src/main/res/menu/activity_main_drawer.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/Rafael/StudioProjects/fogos.pt/app/src/main/res/menu/main.xml" value="0.38697916666666665" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_fire_elements.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1105" />

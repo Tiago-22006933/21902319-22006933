@@ -9,14 +9,29 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/Theme.Fogospt.AppBarOverlay">
+        android:theme="@style/Theme.Fogospt.AppBarOverlay"
+        >
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
-            app:popupTheme="@style/Theme.Fogospt.PopupOverlay" />
+            app:popupTheme="@style/Theme.Fogospt.PopupOverlay">
+
+            <TextView
+                android:id="@+id/riskCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:text="Reduzido"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:background="@drawable/circle_reduzido"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
 
     </com.google.android.material.appbar.AppBarLayout>
 
