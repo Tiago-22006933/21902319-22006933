@@ -12,11 +12,10 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.fogospt.R
 import com.example.fogospt.databinding.FragmentFiresBinding
-import com.example.fogospt.ui.model.FireModel
-import com.example.fogospt.ui.model.FiresModel.listOfFires
-import kotlinx.android.synthetic.main.popup_detail.*
+import com.example.fogospt.ui.model.FireParceLable
+import com.example.fogospt.ui.model.FireRoom
 
-class FiresFragment : Fragment(), MyAdapter.OnItemClickListener {
+class FiresFragment(private var items: List<FireParceLable> = listOf()) : Fragment(), MyAdapter.OnItemClickListener {
 
     private var _binding: FragmentFiresBinding? = null
     // This property is only valid between onCreateView and
@@ -37,7 +36,7 @@ class FiresFragment : Fragment(), MyAdapter.OnItemClickListener {
         binding.mapa.setOnClickListener{ show() }
         binding.lista.setOnClickListener{ hide() }
 
-        binding.recyclerView.adapter = MyAdapter(listOfFires, this)
+        binding.recyclerView.adapter = MyAdapter(items, this)
         binding.recyclerView.layoutManager = LinearLayoutManager(context)
         binding.recyclerView.setHasFixedSize(true)
 
@@ -62,7 +61,7 @@ class FiresFragment : Fragment(), MyAdapter.OnItemClickListener {
 
     override fun onItemClick(position: Int) {
         Toast.makeText(this.context,"Item $position" , Toast.LENGTH_SHORT).show()
-        val clickedItem: FireModel = listOfFires[position]
+        val clickedItem: FireParceLable = items[position]
         val mDialogView = LayoutInflater.from(this.context).inflate(R.layout.popup_detail,null)
         val mBuilder = AlertDialog.Builder(this.context).setView(mDialogView)
 
@@ -73,11 +72,9 @@ class FiresFragment : Fragment(), MyAdapter.OnItemClickListener {
         //var fotografia: TextView = mDialogView.findViewById(R.id.fotografia)
 
         nome.text = "Nome: " + clickedItem.name
-        cc.text = "Documento de identificação. " + clickedItem.cartaoCidadao.toString()
-        destrito.text = "Localização: " + clickedItem.destrito
-        data.text = "Data do registo: " + clickedItem.data.year + "/"+
-                    clickedItem.data.month + "/"+ clickedItem.data.day
-        //nome.text = clickedItem.name
+        cc.text = "Documento de identificação. " + clickedItem.cartaoCidadao
+        destrito.text = "Localização: " + clickedItem.distrito
+        data.text = "Data do registo: " + clickedItem.data
 
         mBuilder.show()
 

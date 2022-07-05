@@ -6,9 +6,10 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.fogospt.R
-import com.example.fogospt.ui.model.FireModel
+import com.example.fogospt.ui.model.FireParceLable
+import com.example.fogospt.ui.model.FireRoom
 
-class MyAdapter(private val list: List<FireModel>, private val listener: OnItemClickListener) : RecyclerView.Adapter<MyAdapter.ViewHolder>(){
+class MyAdapter(private val list: List<FireParceLable>, private val listener: OnItemClickListener) : RecyclerView.Adapter<MyAdapter.ViewHolder>(){
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -22,7 +23,7 @@ class MyAdapter(private val list: List<FireModel>, private val listener: OnItemC
         val currentItem = list[position]
         holder.index.text = "Fogo ${position +1 }"
         holder.nome.text = "Nome: " + currentItem.name
-        holder.data.text = "Data: " + currentItem.data.year + "/" + currentItem.data.month + "/" + currentItem.data.day + "/"
+        holder.data.text = "Data: " + currentItem.data
 
     }
 
