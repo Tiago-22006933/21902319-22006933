@@ -12,14 +12,16 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.fogospt.R
 import com.example.fogospt.databinding.FragmentFiresBinding
+import com.example.fogospt.ui.model.FireDao
+import com.example.fogospt.ui.model.FireModelRoom
 import com.example.fogospt.ui.model.FireParceLable
-import com.example.fogospt.ui.model.FireRoom
 
 class FiresFragment(private var items: List<FireParceLable> = listOf()) : Fragment(), MyAdapter.OnItemClickListener {
 
     private var _binding: FragmentFiresBinding? = null
-    // This property is only valid between onCreateView and
-    // onDestroyView.
+    private lateinit var viewModel : FiresViewModel
+    private lateinit var firemodelroom : FireModelRoom
+    private lateinit var dao: FireDao
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -35,8 +37,7 @@ class FiresFragment(private var items: List<FireParceLable> = listOf()) : Fragme
 
         binding.mapa.setOnClickListener{ show() }
         binding.lista.setOnClickListener{ hide() }
-
-        binding.recyclerView.adapter = MyAdapter(items, this)
+        binding.recyclerView.adapter = MyAdapter(viewModel.getAllFiresList(), this)
         binding.recyclerView.layoutManager = LinearLayoutManager(context)
         binding.recyclerView.setHasFixedSize(true)
 

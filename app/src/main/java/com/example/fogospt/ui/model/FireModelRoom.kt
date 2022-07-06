@@ -7,18 +7,28 @@ import kotlinx.coroutines.launch
 class FireModelRoom(private val dao: FireDao) : FireModel() {
 
     override fun addFire(
-        name: String,
-        cartaoCidadao: String,
+        nome: String,
+        numeroCC: String,
         distrito: String,
         conselho: String,
         frequesia: String,
         data: String,
         hora: String,
-        fotografia: String
+        status: String,
+        fotografia: String,
+        distancia: String,
+        operacionais: String,
+        vehicles: String,
+        planes: String,
+        lat: Double,
+        lng: Double,
+        isRegistry: String
     ) {
         val fire = FireRoom(
-            fireKey = name, name = name, cartaoCidadao = cartaoCidadao, distrito = distrito,
-            conselho = conselho, frequesia = frequesia, data = data, hora = hora, fotografia = fotografia)
+            fireKey = nome, nome = nome, cartaoCidadao = numeroCC, distrito = distrito,
+            conselho = conselho, frequesia = frequesia, data = data, hora = hora, status = status, fotografia = fotografia,
+            distancia = distancia, operacionais = operacionais, vehicles = vehicles, planes = planes, lat = lat, lng = lng,
+                    isRegistry = isRegistry)
 
         CoroutineScope(Dispatchers.IO).launch { dao.insert(fire) }
     }
@@ -26,10 +36,10 @@ class FireModelRoom(private val dao: FireDao) : FireModel() {
     override fun getAllFires(onFinished: (List<FireParceLable>) -> Unit) {
         CoroutineScope(Dispatchers.IO).launch {
             val fires = dao.getAll()
-            print(fires)
             onFinished(fires.map{
-                FireParceLable(it.uuid, it.fireKey, it.name, it.cartaoCidadao, it.distrito,
-                    it.conselho, it.frequesia, it.data, it.hora, it.fotografia)
+                FireParceLable(it.uuid, it.fireKey, it.nome, it.cartaoCidadao, it.distrito,
+                    it.conselho, it.frequesia, it.data, it.hora, it.status, it.fotografia, it.distancia, it.operacionais,
+                    it.vehicles, it.planes, it.lat, it.lng)
             })
         }
     }
@@ -37,7 +47,8 @@ class FireModelRoom(private val dao: FireDao) : FireModel() {
     override fun insertFires(fires: List<FireParceLable>, onFinished: (List<FireParceLable>) -> Unit) {
         CoroutineScope(Dispatchers.IO).launch {
             val history = fires.map { FireRoom(it.uuid, it.fireKey, it.name, it.cartaoCidadao, it.distrito,
-                it.conselho, it.frequesia, it.data, it.hora, it.fotografia) }
+                it.conselho, it.frequesia, it.data, it.hora, it.status, it.fotografia, it.distancia, it.operacionais,
+                it.vehicles, it.planes, it.lat, it.lng, it.isRegistry) }
             dao.insertAll(history)
             onFinished(fires)
         }
@@ -54,8 +65,9 @@ class FireModelRoom(private val dao: FireDao) : FireModel() {
             }
             dao.deleteAll()
             onFinished(registeredFires.map{
-                FireParceLable(it.uuid, it.fireKey, it.name, it.cartaoCidadao, it.distrito,
-                    it.conselho, it.frequesia, it.data, it.hora, it.fotografia)
+                FireParceLable(it.uuid, it.fireKey, it.nome, it.cartaoCidadao, it.distrito,
+                    it.conselho, it.frequesia, it.data, it.hora, it.status, it.fotografia, it.distancia, it.operacionais,
+                    it.vehicles, it.planes, it.lat, it.lng, it.isRegistry)
             })
         }
     }

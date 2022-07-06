@@ -41,8 +41,7 @@ class NewfireFragment : Fragment() {
 
 
         btnSubmit.setOnClickListener {
-            firemodelroom.addFire("Rafael", "123456", "Lisboa","","", "2022-11-11", "13:30", "N/A")
-            firemodelroom.getAllFires {}
+            firemodelroom.addFire("Rafael", "123456", "Lisboa","","", "2022-11-11", "13:30", "N/A", "true")
         }
 
         return root

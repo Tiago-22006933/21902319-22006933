@@ -2,7 +2,6 @@ package com.example.fogospt.ui.model
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
-import java.util.*
 
 @Parcelize
 data class FireParceLable(
@@ -15,8 +14,13 @@ data class FireParceLable(
     var frequesia: String,
     var data: String,
     var hora: String,
+    var status: String,
     var fotografia: String,
-    //var lat: Double,
-    //var lng: Double,
-    //var isRegistry : String = "false",
+    var distancia: String,
+    var operacionais: String,
+    var vehicles: String,
+    var planes : String,
+    var lat: Double,
+    var lng: Double,
+    var isRegistry : String = "false",
 ) : Parcelable

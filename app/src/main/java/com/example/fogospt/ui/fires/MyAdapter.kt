@@ -9,7 +9,7 @@ import com.example.fogospt.R
 import com.example.fogospt.ui.model.FireParceLable
 import com.example.fogospt.ui.model.FireRoom
 
-class MyAdapter(private val list: List<FireParceLable>, private val listener: OnItemClickListener) : RecyclerView.Adapter<MyAdapter.ViewHolder>(){
+class MyAdapter(private var list: List<FireParceLable> = listOf(), private val listener: OnItemClickListener) : RecyclerView.Adapter<MyAdapter.ViewHolder>(){
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
